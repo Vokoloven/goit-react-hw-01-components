@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
 export const Statistics = ({ props }) => {
@@ -22,10 +22,10 @@ export const Statistics = ({ props }) => {
   );
 };
 
-// Statistics: PropTypes.arrayOf(
-//   PropTypes.shape({
-//     id: PropTypes.string,
-//     label: PropTypes.string,
-//     percentage: PropTypes.string,
-//   })
-// );
+Statistics: PropTypes.arrayOf(
+  PropTypes.shape({
+    id: PropTypes.string,
+    label: PropTypes.string,
+    percentage: PropTypes.string,
+  })
+);
