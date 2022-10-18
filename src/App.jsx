@@ -3,7 +3,6 @@ import { Profile } from './components/Profile/Profile.jsx';
 import { Statistics } from './components/Statistics/Statistics.jsx';
 import { Friends } from './components/Friends/Friends';
 import { Transaction } from 'components/Transaction/Transaction';
-import './index.css';
 import user from './assets/user.json';
 import data from './assets/data.json';
 import friends from './assets/friends.json';
