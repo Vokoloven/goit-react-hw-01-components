@@ -5,7 +5,6 @@ import { Friends } from './components/Friends/Friends';
 import { Transaction } from 'components/Transaction/Transaction';
 import user from './assets/user.json';
 import data from './assets/data.json';
-import friends from './assets/friends.json';
 import transaction from './assets/transactions.json';
 
 export const App = () => {
@@ -19,7 +18,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics props={data} />
-      <Friends props={friends} />
+      <Friends />
       <Transaction props={transaction} />
     </>
   );
