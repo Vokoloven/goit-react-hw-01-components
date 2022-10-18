@@ -29,7 +29,7 @@ export const Transaction = ({ props }) => {
 Transaction.propTypes = {
   props: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number,
+      id: PropTypes.string,
       type: PropTypes.string,
       amout: PropTypes.number,
       currency: PropTypes.string,
