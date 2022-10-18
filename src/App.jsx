@@ -10,7 +10,7 @@ import transaction from './assets/transactions.json';
 
 export const App = () => {
   return (
-    <React.StrictMode>
+    <>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -21,6 +21,6 @@ export const App = () => {
       <Statistics props={data} />
       <Friends props={friends} />
       <Transaction props={transaction} />
-    </React.StrictMode>
+    </>
   );
 };
