@@ -33,7 +33,7 @@ export const Friends = ({ props }) => {
 
 Friends.propTypes = {
   props: PropTypes.arrayOf(
-    PropTypes.shape({
+    PropTypes.exact({
       avatar: PropTypes.string.isRequired,
       online: PropTypes.string.isRequired,
       offline: PropTypes.string.isRequired,
