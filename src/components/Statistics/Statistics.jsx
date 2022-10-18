@@ -22,10 +22,12 @@ export const Statistics = ({ props }) => {
   );
 };
 
-Statistics: PropTypes.arrayOf(
-  PropTypes.shape({
-    id: PropTypes.string,
-    label: PropTypes.string,
-    percentage: PropTypes.string,
-  })
-);
+Statistics.propTypes = {
+  props: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.string,
+    })
+  ),
+};

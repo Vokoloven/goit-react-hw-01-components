@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from './Transaction.module.css';
 
 export const Transaction = ({ props }) => {
@@ -26,11 +26,13 @@ export const Transaction = ({ props }) => {
   );
 };
 
-// Transaction: PropTypes.arrayOf(
-//   PropTypes.shape({
-//     id: PropTypes.number,
-//     type: PropTypes.string,
-//     amount: PropTypes.number,
-//     currency: PropTypes.string,
-//   })
-// );
+Transaction.propTypes = {
+  props: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      type: PropTypes.string,
+      amout: PropTypes.number,
+      currency: PropTypes.string,
+    })
+  ),
+};

@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from './Friends.module.css';
 
 export const Friends = ({ props }) => {
@@ -31,13 +31,15 @@ export const Friends = ({ props }) => {
   );
 };
 
-// Friends: PropTypes.arrayOf(
-//   PropTypes.shape({
-//     avatar: PropTypes.string,
-//     online: PropTypes.string,
-//     offline: PropTypes.string,
-//     name: PropTypes.string,
-//     isOnline: PropTypes.bool,
-//     id: PropTypes.number,
-//   })
-// );
+Friends.propTypes = {
+  props: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string,
+      online: PropTypes.string,
+      offline: PropTypes.string,
+      name: PropTypes.string,
+      isOnline: PropTypes.bool,
+      id: PropTypes.number,
+    })
+  ),
+};
